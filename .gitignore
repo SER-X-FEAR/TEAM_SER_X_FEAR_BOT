@@ -7,3 +7,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .vscode/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.python-version
+.venv/
+venv/
+.Pipfile.lock
+pip-wheel-metadata/
+.idea/
