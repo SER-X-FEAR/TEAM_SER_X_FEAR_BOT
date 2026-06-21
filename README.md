@@ -1,38 +1,83 @@
 # TEAM_SER_X FEAR BOT
 
-Проект: Highrise Bot для вашей организации на GitHub.
+[![Python CI](https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT/actions/workflows/python-ci.yml/badge.svg)](https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT/actions/workflows/python-ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Описание
+Highrise Bot для организации `SER-X-FEAR` — стартовый репозиторий для разработки игрового бота на Python, который будет взаимодействовать с Highrise API, отправлять уведомления, обрабатывать команды и автоматизировать задачи.
 
-Это стартовый репозиторий для разработки бота на Python, который будет взаимодействовать с Highrise, предоставлять игровые уведомления, команды и автоматизацию.
+## Что уже настроено
 
-## Стек
+- `README.md` с руководством по запуску
+- `requirements.txt` и `pyproject.toml`
+- `.env.example` для переменных окружения
+- `src/main.py` — точка входа бота
+- GitHub Actions для проверки синтаксиса
+- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`
+- шаблоны issue и pull request
+- `CODEOWNERS` для контроля изменений
+- лицензия MIT
+
+## Требования
 
 - Python 3.11+
-- python-dotenv для конфигурации
-- requests для обращений к API
+- `pip`
 
-## Быстрый старт
+## Установка
 
-1. Установите зависимости:
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT.git
+   cd TEAM_SER_X_FEAR_BOT
+   ```
+2. Установите зависимости:
    ```bash
    python -m pip install -U pip
    python -m pip install -r requirements.txt
    ```
-2. Создайте файл `.env` на основе `.env.example` и заполните переменные.
-3. Запустите бота:
+3. Скопируйте `.env.example` в `.env` и заполните значения:
    ```bash
-   python src/main.py
+   cp .env.example .env
    ```
+
+## Переменные окружения
+
+- `BOT_TOKEN` — токен для бота
+- `HIGHRISE_API_URL` — адрес API Highrise
+- `NODE_ENV` — режим (например, `development`)
+
+## Запуск
+
+Запустите бота командой:
+```bash
+python src/main.py
+```
 
 ## Разработка
 
-- `python -m pip install -r requirements.txt` — установка зависимостей
+- Все изменения вносятся через pull request.
+- Для исправлений и новых функций создавайте отдельные ветки, например:
+  - `feature/имя`
+  - `bugfix/имя`
+  - `docs/имя`
+- Перед отправкой PR проверьте синтаксис:
+  ```bash
+  python -m compileall src
+  ```
 
-## Организация работы
+## Команда и вклад
 
-Проект включает шаблоны GitHub Issues и Pull Request, чтобы команда могла работать в организации структурированно.
+Для участия см. `CONTRIBUTING.md`.
 
-## Задачи и планы
+Если вы хотите предложить новую функцию или найти баг, используйте шаблоны:
+- `Bug report`
+- `Feature request`
 
-Основной список задач расположен в файле `TODO.md`.
+## Политика проекта
+
+- Репозиторий открыт для организации `SER-X-FEAR`.
+- Все изменения проходят через Pull Request.
+- Ветка `master` защищена и требует прохождения CI.
+
+## Лицензия
+
+Этот проект лицензирован по MIT. См. `LICENSE`.
