@@ -1,0 +1,16 @@
+[project]
+name = "team_ser_x_fear_bot"
+version = "0.1.0"
+description = "Highrise bot scaffold for the TEAM_SER_X organization."
+readme = "README.md"
+authors = ["TEAM_SER_X"]
+license = "MIT"
+requires-python = ">=3.11"
+
+[project.dependencies]
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["setuptools>=65.0.0","wheel"]
+build-backend = "setuptools.build_meta"
