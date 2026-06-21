@@ -47,6 +47,11 @@ def ensure_venv_and_reexec(venv_dir: str = ".venv", requirements: str = "require
         subprocess.check_call([str(venv_py), "-m", "pip", "install", "--upgrade", "pip"])
         subprocess.check_call([str(venv_py), "-m", "pip", "install", "-r", str(req_file)])
 
+    # Install the current package in editable mode into the venv so `-m team_ser_x_fear_bot` works
+    project_root = Path.cwd()
+    if (project_root / 'pyproject.toml').exists() or (project_root / 'setup.py').exists():
+        subprocess.check_call([str(venv_py), "-m", "pip", "install", "-e", str(project_root)])
+
     # Re-exec into venv with a marker to avoid loops
     new_env = os.environ.copy()
     new_env["TSXFB_BOOTED"] = "1"
