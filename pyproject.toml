@@ -3,13 +3,23 @@ name = "team_ser_x_fear_bot"
 version = "0.1.0"
 description = "Highrise bot scaffold for the TEAM_SER_X organization."
 readme = "README.md"
-authors = ["TEAM_SER_X"]
+authors = [
+  { name = "SER-X-FEAR" }
+]
 license = "MIT"
 requires-python = ">=3.11"
+dependencies = [
+  "python-dotenv>=1.0.0",
+  "requests>=2.31.0",
+]
 
-[project.dependencies]
-python-dotenv = "^1.0.0"
-requests = "^2.31.0"
+[project.urls]
+Repository = "https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT"
+Homepage = "https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["team_ser_x_fear_bot*"]
 
 [build-system]
 requires = ["setuptools>=65.0.0","wheel"]

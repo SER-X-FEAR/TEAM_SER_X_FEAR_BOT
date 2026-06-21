@@ -1,3 +1,18 @@
+Metadata-Version: 2.4
+Name: team_ser_x_fear_bot
+Version: 0.1.0
+Summary: Highrise bot scaffold for the TEAM_SER_X organization.
+Author: SER-X-FEAR
+License-Expression: MIT
+Project-URL: Repository, https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT
+Project-URL: Homepage, https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: requests>=2.31.0
+Dynamic: license-file
+
 # TEAM_SER_X FEAR BOT
 
 [![Python CI](https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT/actions/workflows/python-ci.yml/badge.svg)](https://github.com/SER-X-FEAR/TEAM_SER_X_FEAR_BOT/actions/workflows/python-ci.yml)
@@ -35,14 +50,9 @@ Highrise Bot для организации `SER-X-FEAR` — стартовый �
    python -m pip install -r requirements.txt
    ```
 3. Скопируйте `.env.example` в `.env` и заполните значения:
-   - на Windows:
-     ```powershell
-     copy .env.example .env
-     ```
-   - на Linux/macOS:
-     ```bash
-     cp .env.example .env
-     ```
+   ```bash
+   copy .env.example .env
+   ```
 
 ## Установка пакета
 
@@ -57,10 +67,6 @@ Highrise Bot для организации `SER-X-FEAR` — стартовый �
    ```bash
    python -m team_ser_x_fear_bot
    ```
-
-## Кроссплатформенность
-
-Проект разработан для работы на Windows, macOS и Linux. CI проверяет сборку и запуск на всех трёх платформах.
 
 ## Переменные окружения
 

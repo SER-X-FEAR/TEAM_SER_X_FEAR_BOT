@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/team_ser_x_fear_bot/__init__.py
+src/team_ser_x_fear_bot/__main__.py
+src/team_ser_x_fear_bot/bot.py
+src/team_ser_x_fear_bot/commands.py
+src/team_ser_x_fear_bot.egg-info/PKG-INFO
+src/team_ser_x_fear_bot.egg-info/SOURCES.txt
+src/team_ser_x_fear_bot.egg-info/dependency_links.txt
+src/team_ser_x_fear_bot.egg-info/requires.txt
+src/team_ser_x_fear_bot.egg-info/top_level.txt
