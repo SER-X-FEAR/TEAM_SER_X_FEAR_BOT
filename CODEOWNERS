@@ -1,0 +1,11 @@
+# Code owners for TEAM_SER_X_FEAR_BOT
+# Используйте @organization/team для команд, либо @username для отдельных участников
+
+# Все файлы в проекте
+* @SER-X-FEAR
+
+# Документация
+/docs/ @SER-X-FEAR
+
+# Workflow и CI
+.github/workflows/ @SER-X-FEAR
